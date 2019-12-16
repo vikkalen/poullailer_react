@@ -44,6 +44,8 @@ export default class Config extends Component {
         <FormInput keyboardType="numeric" value={this.state.retry} onChangeText={(retry) => this.setState({retry})}/>
         <FormLabel>Veille</FormLabel>
         <FormInput keyboardType="numeric" value={this.state.sleep} onChangeText={(sleep) => this.setState({sleep})}/>
+        <FormLabel>Délai de fermeture</FormLabel>
+        <FormInput keyboardType="numeric" value={this.state.fermeture_delay} onChangeText={(fermeture_delay) => this.setState({fermeture_delay})}/>
 
         <Button raised icon={{name: 'check', color:StyleSheet.flatten(styles.icon).color}} backgroundColor={StyleSheet.flatten(styles.icon).backgroundColor} color={StyleSheet.flatten(styles.icon).color} title="Configurer" onPress={this.configurer} disabled={this.state.disabled}/>
 
